@@ -1,0 +1,36 @@
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$color-tertiary-dark:darken($color-tertiary, 40%);
+$color-white:#ffff;
+$color-bck-grd-dark:#eaeaea;
+$color-bck-grd-light:#f6f6f6;
+$color-primary-lighten: lighten($color-primary, 35%);
+$color-fourthary: #353535;
+$color-i-operate:grey;
+$gradient:linear-gradient(350deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$gradient-brighter:linear-gradient(350deg, #9356dc 0%, #ff79da 80%);
+/* font */
+$head-foot-font: 'Shrikhand', sans-serif;
+$content-font: 'roboto', sans-serif;
+
+/* font-size and weight*/
+$header-size: 1.8rem;
+
+
+
+
+/* shadows*/
+$head-shade: inset 0 4px 9px -7px rgba(0,0,0,0.7);
+$box-shade:0 4px 9px -7px rgba(0,0,0,0.7);
+$button-shade:0px 3px 22px -5px #00000078;
+
+$button-shade-hover:0px 7px 15px 0px #0000003b;
+
+
+/* Media queries */
+$breakpoints: (
+    small: 499px,
+    middle: 768px,
+    large: 1024px
+)

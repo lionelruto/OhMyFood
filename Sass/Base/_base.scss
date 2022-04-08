@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1, h2, h3, h5, h6, p, span, a, li, button, ::placeholder{
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+
+h3{
+    font-size: 1.15rem;
+}
+h4{
+    font-size: 1.1rem;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}

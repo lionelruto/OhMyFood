@@ -1,0 +1,54 @@
+button{
+    order: 2;
+    align-self: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: $color-white ;
+    border: none;
+    font-size: 1rem;
+    margin: 15px 0 38px 0;
+    padding:15px 20px;
+    border-radius:30px;
+    cursor: pointer;
+    box-shadow: $button-shade;
+    background: $gradient;
+    position: relative;
+    z-index: 1;
+    @include largeScreen{
+        display: none;
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        z-index: -1;
+        background: $gradient-brighter;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: 400ms;
+        border-radius:30px;
+    }
+        
+    &:hover::after{
+       opacity: 1;
+       box-shadow:$button-shade-hover; 
+        
+
+    }
+}
+.menu-button{
+    @include menu-button-style;
+    
+}
+.menu-button.button-tablet{
+    display: none;
+    @include mediumScreen{
+display: block;
+    }
+    @include largeScreen{
+        display: block;
+            }
+}

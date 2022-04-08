@@ -1,0 +1,51 @@
+article li{
+    -webkit-animation: splash 1100ms normal backwards ease-in-out;
+            animation: splash 1100ms normal backwards ease-in-out;
+
+}
+
+@for $i from 1 through 4 {
+    article li:nth-child(#{$i}n) {
+        -webkit-animation-delay: #{$i * 0.2}s;
+                animation-delay: #{$i * 0.2}s;
+
+    }
+}
+@-webkit-keyframes splash {
+    from {
+        transform: translateY(15px);
+
+        opacity: 0;
+            }
+       50%{
+           opacity: 0;
+           
+       }
+        50%{
+            opacity: 1;
+            
+        }
+    to {
+        
+        transform: translateY(0px);
+    }
+}
+@keyframes splash {
+    from {
+        transform: translateY(15px);
+
+        opacity: 0;
+            }
+       50%{
+           opacity: 0;
+           
+       }
+        50%{
+            opacity: 1;
+            
+        }
+    to {
+        
+        transform: translateY(0px);
+    }
+}

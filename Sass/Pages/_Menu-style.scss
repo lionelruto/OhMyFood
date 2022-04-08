@@ -1,0 +1,82 @@
+header {
+    & a{
+        text-decoration: none;
+    }
+    & i:before{
+    position: absolute;
+    left: 23px;
+    top: 26px;
+    font-size: 1.2rem;
+   
+@include largeScreen{
+   font-size: 1.4rem;
+   left: 33px;
+   top: 45px;
+}
+}
+& button{
+    display: none;
+    @include largeScreen{
+      display: block;
+        position: absolute;
+        margin: 0;
+      left: 70px;
+      top: 40PX;
+      font-size: 0.8rem;
+      padding: 12px 12px;      
+    }
+} 
+
+
+}
+.header-img{
+    @include header-img-style;
+    
+}
+.large-screen-menu-main{
+    @include mediumScreen{
+    display: flex;
+    flex-flow: row-reverse;
+    }
+    @include largeScreen{
+        display: flex;
+        flex-flow: row-reverse;
+        }
+}
+.menu{
+    @include menu-container-style;
+    & h2{
+        @include h2-menu-style;
+        
+    }
+    @include mediumScreen{
+        width: 52%
+        }
+        @include largeScreen{
+            width: 50%
+            }
+    
+    & li{
+        @include menu-li-style;
+    & .price-check{
+            @include Price-check-style;
+            }
+
+    
+    &:hover i:before{
+            transform: rotate(0turn);
+            transition-duration: 500ms;
+        }
+    }
+    & article{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+       
+        
+        
+      
+
+}}
+
+

@@ -1,0 +1,24 @@
+header {
+    display: block;
+    font-family: $head-foot-font;
+    text-align: center;
+    font-size: $header-size;
+    background-color: $color-white;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    @include largeScreen{
+        box-shadow: $box-shade;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 2.2rem;
+        position: relative;
+        z-index: 1;
+        
+    }
+   @include mediumScreen{
+    box-shadow: $box-shade;
+    position: relative;
+    z-index: 1;
+
+   }
+}
