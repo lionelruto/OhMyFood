@@ -5,10 +5,6 @@
 
 <img src="https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg" width=500/><br/>
 
-<strong>lien git-page :</strong><br/>
-https://damienlopvet.github.io/P3_19072021/index.html
-
-
 <em>Construir une maquette de "ohmyfood" uniquement en Css en utilisant Sass, sans javascript ni frameworks.</em>
 
 <h2>Brief créatif</h2>
